@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
-EditText name1,number,url;
+EditText name1,number,url,lat,lon;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +18,8 @@ EditText name1,number,url;
         name1 = findViewById(R.id.my);
         number = findViewById(R.id.number);
         url = findViewById(R.id.web);
+        lat = findViewById(R.id.lat);
+        lon = findViewById(R.id.lon);
     }
 
     public void next(View view) {
@@ -41,5 +43,13 @@ EditText name1,number,url;
         uri =  Uri.parse("https://"+br);
         Intent i = new Intent(Intent.ACTION_VIEW,uri);
         startActivity(i);
+    }
+
+    public void map(View view) {
+        String la = lat.getText().toString();
+        String lo = lon.getText().toString();
+        Uri longi,lati;
+        longi = Uri.parse("longit")
+
     }
 }

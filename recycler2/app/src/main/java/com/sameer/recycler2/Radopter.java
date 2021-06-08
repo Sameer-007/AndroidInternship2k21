@@ -1,5 +1,6 @@
 package com.sameer.recycler2;
 
+import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -8,6 +9,17 @@ import androidx.recyclerview.widget.RecyclerView;
 
 public class Radopter extends RecyclerView.Adapter<Radopter.MyviewHolder> {
 
+
+    Context ct;
+    int[] myimages;
+    String[] mynames,myprices;
+
+    public Radopter(MainActivity mainActivity, int[] images, String[] names, String[] prices) {
+        ct = mainActivity;
+        myimages = images;
+        myprices = prices;
+        mynames = names;
+    }
 
     @NonNull
     @org.jetbrains.annotations.NotNull

@@ -18,7 +18,8 @@ public class MainActivity extends AppCompatActivity {
         String [] names = { "chk biryani","chk fry","chk curry","mutton curry","mutton biryani", "fish fry","fish curry","prawns curry","prawns biryani","chk lolipop"};
         String [] prices = {"150","100","100","450","350","200","180","350","400","250"};
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        Radopter radopter = new Radopter();
+        Radopter radopter = new Radopter(this,images,names,prices);
         recyclerView.setAdapter(radopter);
+
         }
     }

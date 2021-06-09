@@ -27,7 +27,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Confirmed  cases"
+
         android:textSize="27sp"
         android:id="@+id/cc"
         />
@@ -36,14 +36,14 @@
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Active cases"
+
         android:id="@+id/ac"
         />
     <TextView
         android:textSize="27sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Recovered cases"
+
         android:id="@+id/rc"
         />
 
@@ -51,7 +51,8 @@
         android:textSize="27sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Toatal cases"
+
+
         android:id="@+id/tc"
         />
 

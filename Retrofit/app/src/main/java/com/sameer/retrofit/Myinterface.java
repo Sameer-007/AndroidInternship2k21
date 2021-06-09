@@ -6,7 +6,7 @@ import retrofit2.http.Path;
 
 public interface Myinterface {
     @GET("dayone/country/{input}")
-    Call<String>getValue(@Path("input") String i);
+    Call<String> getValue(@Path("input") String i);
 
 
 }
